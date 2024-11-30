@@ -2,17 +2,14 @@
 The Gower distance is a measure of similarity between two data points that can handle mixed data types [^1]. This repository contains a MATLAB implementation of the Gower distance calculation for datasets.
 [^1]: Gower, J. C. (1971). A general coefficient of similarity and some of its properties. Biometrics, 857-871.
 
-## Usage
-To use the Gower distance calculation function, simply clone this repository and run the `GowerDistance()` function in MATLAB.
+**Usage:** Paste `GowerDistance()` function in MATLAB. Example usage is as follows.
 ```m
 X = readtable('dataset.csv',VariableNamingRule='preserve');
 D = GowerDistance(X);
 disp(D);
 ```
 
-## Citation
-If you use this code in your research, please cite the following paper:
-
+**Citation:** If you use this code in your research, please cite the following paper.
 ```bibtex
 @INPROCEEDINGS{10730392,
   author={Pyae, Aung and Low, Yeh-Ching and Chua, Hui Na},
