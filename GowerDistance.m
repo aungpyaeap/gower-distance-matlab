@@ -31,7 +31,4 @@ end
 % Normalize by the number of valid attributes
 D = D / p;
 
-% fprintf('Maximum Gower Distance: %.4f\n', max(D(:)));
-% fprintf('Minimum Gower Distance: %.4f\n', min(D(D > 0.00)));
-
 end
