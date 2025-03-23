@@ -4,16 +4,13 @@ D = zeros(n, n);
 
 for i = 1:p
     column = data{:, i};
-
     if isnumeric(column)
-        % For numeric variables
         range = max(column) - min(column);
         if range == 0
-            continue; % Skip constant columns
+            continue;
         end
         d = abs(column - column') / range;
     elseif iscell(column) || iscategorical(column) || isobject(column)
-        % For categorical variables
         d = zeros(n, n);
         for j = 1:n
             for k = 1:n
@@ -28,7 +25,6 @@ for i = 1:p
     D = D + d;
 end
 
-% Normalize by the number of valid attributes
 D = D / p;
 
 end
