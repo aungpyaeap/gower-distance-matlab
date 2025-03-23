@@ -1,5 +1,5 @@
 # Gower Distance MATLAB
-The Gower distance is a measure of similarity and distance between two data points that can handle mixed data types [1]. This repository contains a MATLAB implementation of the Gower distance calculation for mixed datasets.
+The Gower distance is a measure of similarity and distance between two data points that can handle mixed data types [1]. This repository contains a MATLAB implementation of the Gower distance calculation for datasets.
 
 **Usage:** Paste `GowerDistance()` function in MATLAB. Example usage is as follows.
 ```m
