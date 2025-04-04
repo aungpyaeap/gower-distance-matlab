@@ -3,7 +3,7 @@ The Gower distance is a measure of similarity and distance between two data poin
 
 ![Gower distance](gower-distance.svg)
 
-This repository contains a MATLAB implementation of the Gower distance calculation for datasets.
+This repository contains a MATLAB implementation of Gower distance calculation for mixed numerical and categorical datasets. The function returns $n \times n$ dissimilarity matrix.
 
 **Usage:** Paste `GowerDistance()` function in MATLAB. Example usage is as follows.
 ```m
