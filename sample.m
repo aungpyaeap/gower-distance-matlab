@@ -1,6 +1,4 @@
-clc;
-clear;
-close all;
+clc; clear; close all;
 
 % Define data
 Gender = {'male'; 'female'; 'male'; 'female'; 'male'; 'male'; 'female'; 'male'};
