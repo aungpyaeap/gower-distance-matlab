@@ -1,7 +1,12 @@
 # Gower Distance MATLAB
 The Gower distance is a measure of similarity and distance between two data points that can handle mixed data types [1].
 
-![Gower distance](gower-distance.svg)
+<img align="center" src="https://i.upmath.me/svg/d(x_i%2Cx_j)%20%3D%20%5Cfrac%7B%5Csum_%7Bk%3D1%7D%5Ep%20w_%7Bijk%7D%20d_%7Bijk%7D%7D%7B%5Csum_%7Bk%3D1%7D%5Ep%20w_%7Bijk%7D%7D%2C%20%5Ctext%7Bwhere%20%7Dw_%7Bijk%7D%3A%3D%20%5B0%2C1%5D%2C%20d_%7Bij%7D%3A%3D%20%0A%5Cbegin%7Bcases%7D%0A%5Cfrac%7B%7Cx_%7Bik%7D%20-%20x_%7Bjk%7D%7C%7D%7B%5Cmax(x)%20-%20%5Cmin(x)%7D%20%26%20%5Ctext%7Bif%20%24x_%7Bik%7D%24%20and%20%24x_%7Bjk%7D%24%20are%20numerical%7D%5C%5C%0A0%20%26%20%5Ctext%7Bif%20%24x_%7Bik%7D%20%3D%20x_%7Bjk%7D%24%20(categorical)%7D%20%5C%5C%0A1%20%26%20%5Ctext%7Bif%20%24x_%7Bik%7D%20%5Cneq%20x_%7Bjk%7D%24%20(categorical)%7D%0A%5Cend%7Bcases%7D" alt="d(x_i,x_j) = \frac{\sum_{k=1}^p w_{ijk} d_{ijk}}{\sum_{k=1}^p w_{ijk}}, \text{where }w_{ijk}:= [0,1], d_{ij}:= 
+\begin{cases}
+\frac{|x_{ik} - x_{jk}|}{\max(x) - \min(x)} &amp; \text{if $x_{ik}$ and $x_{jk}$ are numerical}\\
+0 &amp; \text{if $x_{ik} = x_{jk}$ (categorical)} \\
+1 &amp; \text{if $x_{ik} \neq x_{jk}$ (categorical)}
+\end{cases}" />
 
 This repository contains a MATLAB implementation of Gower distance calculation for mixed numerical and categorical datasets. The function returns $n \times n$ dissimilarity matrix.
 
