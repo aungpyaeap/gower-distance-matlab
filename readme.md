@@ -14,7 +14,8 @@ D = gower(X);
 disp(D);
 ```
 
-**Citation:** If you use this code in your research, please cite the following paper.
+**Citation**
+
 Pyae, A., Low, Y. C., & Chua, H. N. (2024, August). A Combined Distance Metric Approach with Weight Adjustment For Improving Mixed Data Clustering Quality. In 2024 IEEE International Conference on Artificial Intelligence in Engineering and Technology (IICAIET) (pp. 183-188). IEEE.
 ```bibtex
 @INPROCEEDINGS{10730392,
