@@ -11,6 +11,6 @@ dataPoints = table(Gender, Age, Height, Hobby);
 fprintf('Dataset %d x %d matrix.\n', height(dataPoints), width(dataPoints));
 disp(dataPoints);
 
-DIST = GowerDistance(dataPoints);
+DIST = gower(dataPoints);
 fprintf('Gower distance matrix %d x %d matrix.\n', height(DIST), width(DIST));
 disp(DIST);
