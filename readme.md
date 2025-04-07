@@ -2,12 +2,8 @@
 The Gower distance is a measure of similarity and distance between two data points that can handle mixed data types [1].
 
 $d(x_i,x_j) = \frac{\sum_{k=1}^p w_{ijk} d_{ijk}}{\sum_{k=1}^p w_{ijk}}$
-where $w_{ijk}:= [0,1]$ and \[d_{ij}:= 
-\begin{cases}
-\frac{|x_{ik} - x_{jk}|}{\max(x) - \min(x)} & \text{if $x_{ik}$ and $x_{jk}$ are numerical}\\
-0 & \text{if $x_{ik} = x_{jk}$ (categorical)} \\
-1 & \text{if $x_{ik} \neq x_{jk}$ (categorical)}
-\end{cases}\]
+
+where $w_{ijk}:= [0,1]$ and $d_{ij}$ is defined as $d_{ij}:=\frac{|x_{ik} - x_{jk}|}{\max(x) - \min(x)}$ if $x_{ik}$ and $x_{jk}$ are numerical and  $d_{ij}:=\delta(x_{ik}, x_{jk}) = 1 - \mathbb{I}(x_{ik} = x_{jk})$ if categorical.
 
 This repository contains a MATLAB implementation of Gower distance calculation for mixed numerical and categorical datasets. The function returns $n \times n$ dissimilarity matrix.
 
